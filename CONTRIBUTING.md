@@ -1,6 +1,24 @@
 # Contribution Guidelines
 
+<!-- markdownlint-disable MD026 MD013 -->
+This contributors' guide contains information from the upstream project, alongside
+any Recap Time Squad specifics to this fork.
+
 ## Prerequisite
+
+### Legalese
+
+While we do not have a CLA (yet) to sign if your company insists, we do require everyone to sign-off
+off your commits by adding `--signoff` to your `git commit` command OR enable `git.alwaysSignOff` in
+VS Code (this repo has that enabled via [`.vscode/settings.json`](.vscode/settings.json) file).
+
+### Upstream First Policy
+
+Most of the images in this repo have customizations for use usually in Recap Time Squad projects, especially
+around the use of [Doppler CLI](https://doppler.com) for secrets management.
+
+If you want to submit a contribution which suits for anybody (not just us and
+our contributors), then [please submit to upstream first](https://github.com/gitpod-io/workspace-images/pulls).
 
 ### Before you start
 
@@ -9,29 +27,28 @@ The first step would be to ensure that we already don't have an image or an issu
 After that create an issue explaining how this image would be useful to the community or comment on the existing issue expressing your interest.
 One of the maintainers will review the issue and acknowledge if you can work on the issue.
 
-You need to have a gitpod account in order to seamlessly contribute to this repo.
+You need to have a Gitpod account in order to seamlessly contribute to this repo.
 
-
-> **NOTE:** Maintainers have access to push branches to this repo whereas the community is expected to fork this repo in order to raise a PR.
-
+> **NOTE:** Maintainers (usually [@recaptime-dev/squad](https://mau.dev/recaptime-dev/squad)) have access to push branches to
+this repo whereas the community is expected to fork this repo in order to raise a MR.
 
 ## Tools
 
-This repo is already configured with a [.gitpod.yml](.gitpod.yml) which installs and sets up all the required dependency.
+This repo is already configured with a [`.gitpod.yml`](.gitpod.yml) which installs and sets up all the required dependency.
 It also starts the services that are required to build this repo in dedicated bash shells.
 
 Here is a list of dependencies and tools:
 
-1. [docker](https://docs.docker.com/get-started/overview/) - to start a local registry server
+1. [Docker Engine](https://docs.docker.com/get-started/overview/) - to start a local registry server
 1. [buildkitd](https://github.com/moby/buildkit) - to help build the images
 1. [dazzle](https://github.com/gitpod-io/dazzle/) - primary tool used to build docker images
-1. [registry image](https://docs.docker.com/registry/deploying/) - a local registry server image
+1. [`registry:2` Docker image](https://docs.docker.com/registry/deploying/) - a local registry server image
 
 ## Building images
 
 ## Locally
 
-We ship a shell script [build-all.sh](build-all.sh) that can be used to build the images locally. See the following sub sections for usage.
+We ship a shell script [`build-all.sh`](build-all.sh) that can be used to build the images locally. See the following sub sections for usage.
 
 This script will first build the chunks and run tests followed by creation of container images. It uses `dazzle` to perform these tasks.
 
@@ -99,19 +116,19 @@ Subsequent pushes would be faster (~25 mins) depending on the number of chunks m
 We have two Release workflows:
 
 1. **[Build from Main](.github/workflows/push-main.yml)**
-    - On push to the default branch `main` release datetimestamp tagged images to dockerhub. Does **NOT** update the `latest` tag
+    - On push to the default branch `main` release datetimestamp tagged images to both RHQCR and GHCR. Does **NOT** update the `latest` tag
 1. **[Update latest tags](.github/workflows/dockerhub-release.yml)**
-    - Weekly update the `latest` tag of all images in dockerhub with current latest datetimestamp image
+    - Weekly update the `latest` tag of all images in aforementioned container registries with current latest datetimestamp image
 
-We do not release any images from pull requests.
-All the images are built within GH Actions and tested using dazzle.
+We do not build any images from pull requests for security reasons.
+All the images are built within GitHub Actions and tested using dazzle.
 
-As evident from previous sections, we use a single GitHub Actions Workflow to build and then release the created images.
+As evident from previous sections, we use a single GitHub Actions Workflow (which then divided into each job for each layer of the image) to build and then release the created images.
 
-#### Images
+#### Container Image Artifacts
 
 Dazzle builds and stores the images as tags of `localhost:5000/workspace-base-images` image.
-We use an internal Google Artifact Registry to further persist and retag the images with proper names and timestamp.
+We use an internal GHCR to further persist and retag the images with proper names and timestamp.
 
 Post the completion of above step we push the images to our [public Docker Hub registry](https://hub.docker.com/u/gitpod).
 You can find all the images under `gitpod/`.

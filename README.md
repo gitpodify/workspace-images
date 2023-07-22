@@ -11,6 +11,7 @@ For an example of how to use these images, please take a look at the [official d
 
 ## Contributing
 
-You can follow the detailed guide on how to contribute [here](CONTRIBUTING.md).
+You can follow the detailed guide on how to contribute [here](CONTRIBUTING.md). Please be reminded that signing-off
+your commits is required per [the Linux DCO](https://policies.recaptime.eu.org/opensource/linux-dco).
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/workspace-images)
