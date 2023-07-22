@@ -26,13 +26,19 @@ tasks:
       echo "To list image chunks 'dazzle project image-name $REPO'"
       echo "To list hashes for image chunks 'dazzle project hash $REPO'"
       echo "To print the combined image maniest 'dazzle project manifest $REPO'"
-
     openMode: tab-after
 
 vscode:
   extensions:
+    # linting and docker
     - ms-azuretools.vscode-docker
     - timonwong.shellcheck
+    - exiasr.hadolint
+    - vivaxy.vscode-conventional-commits
+    - DavidAnson.vscode-markdownlint
+    # Git(Hub/Lab)
+    - gitlab.gitlab-workflow
+    - cschleiden.vscode-github-actions
 
 github:
   prebuilds:

@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "timonwong.shellcheck",
+        "redhat.vscode-yaml",
+        "eamodio.gitlens",
+        "gitlab.gitlab-workflow",
+        "davidanson.vscode-markdownlint",
+        "vivaxy.vscode-conventional-commits",
+        "cschleiden.vscode-github-actions",
+        "ms-azuretools.vscode-docker",
+        "exiasr.hadolint"
+    ]
+}
