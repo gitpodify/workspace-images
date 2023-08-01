@@ -1,0 +1,16 @@
+{
+    "conventionalCommits.scopes": [
+        "global",
+        "gitpod",
+        "dazzle",
+        "github-actions",
+        "gitlab-ci",
+        "base",
+        "dep-cacert-update",
+        "tool-docker",
+        "tool-doppler",
+    ],
+    "conventionalCommits.autoCommit": false,
+    "conventionalCommits.gitmoji": true,
+    "git.alwaysSignOff": true
+}

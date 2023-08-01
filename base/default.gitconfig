@@ -1,0 +1,42 @@
+# SPDX-License-Identifier: MIT AND MPL-2.0
+# Note to fellow maintainers:
+# * DO NOT ADD command filters for LFS since it is being handled during image build. - ~ajhalili2006
+
+### Copied from https://github.com/gitpod-io/workspace-images/blob/6e94c2184c21cd3aa1f1343d45253850eecaff32/base/default.gitconfig ###
+[safe]
+	directory = *
+
+### The rest of this file are Recap Time Squad specifics. ###
+# https://groups.google.com/g/binary-transparency/c/f-BI4o8HZW0
+[transfer]
+  fsckobjects = true
+[fetch]
+  fsckobjects = true
+[receive]
+  fsckObjects = true
+
+# Add Signed-Off-By trailer when generating git patches
+[format]
+  signOff = true
+
+# Authenticate via both GitHub and GitLab CLI, although Gitpod
+# will override this at workspace level as expected.
+[credential "https://github.com"]
+        helper =
+        helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+        helper =
+        helper = !/usr/bin/gh auth git-credential
+[credential "https://gitlab.com"]
+        helper =
+        helper = !/usr/bin/glab auth git-credential
+[credential "https://mau.dev"]
+        helper =
+        helper = !/usr/bin/glab auth git-credential
+[credential "https://gitlab.alpinelinux.org"]
+        helper =
+        helper = !/usr/bin/glab auth git-credential
+
+# use main instead of master for running git init
+[init]
+  defaultBranch = main

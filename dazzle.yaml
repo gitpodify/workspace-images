@@ -1,0 +1,7 @@
+combiner:
+  combinations:
+    - name: base
+      chunks:
+        - dep-cacert-update
+        - tool-docker
+        - tool-tailscale
