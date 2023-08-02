@@ -9,8 +9,12 @@
         "dep-cacert-update",
         "tool-docker",
         "tool-doppler",
+        "license"
     ],
     "conventionalCommits.autoCommit": false,
     "conventionalCommits.gitmoji": true,
-    "git.alwaysSignOff": true
+    "git.alwaysSignOff": true,
+    "files.associations": {
+        ".github/CODEOWNERS": "CODEOWNERS"
+    },
 }
