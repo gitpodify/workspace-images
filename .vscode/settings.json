@@ -3,18 +3,33 @@
         "global",
         "gitpod",
         "dazzle",
+        "template",
         "github-actions",
         "gitlab-ci",
         "base",
         "dep-cacert-update",
         "tool-docker",
         "tool-doppler",
-        "license"
+        "license",
+        "image-readme",
+        "contributing-guidelines",
+        "ci",
+        "vscode"
     ],
     "conventionalCommits.autoCommit": false,
     "conventionalCommits.gitmoji": true,
     "git.alwaysSignOff": true,
     "files.associations": {
-        ".github/CODEOWNERS": "CODEOWNERS"
+        ".github/CODEOWNERS": "CODEOWNERS",
+        ".gitlab/CODEOWNERS": "codeowners"
     },
+    "hadolint.cliOptions": [
+        "--no-color"
+    ],
+    "gitlens.remotes": [
+        {
+            "domain": "mau.dev",
+            "type": "GitLab"
+        }
+    ]
 }
