@@ -31,6 +31,17 @@ repos:
 
 # TODO: enable after fixing lint errors
   - repo: https://github.com/hadolint/hadolint
-    rev: v2.4.1
+    rev: v2.12.0
     hooks:
-     - id: hadolint
+     - id: hadolint-docker
+       args: [
+         "--trusted-registry", "ghcr.io",
+         "--trusted-registry", "localhost:5000",
+         "--trusted-registry", "quay.io",
+         "--trusted-registry", "docker.io",
+         "--trusted-registry", "dock.mau.dev",
+         "--ignore", "DL3009",
+         "--ignore", "DL3006",
+         "--warning", "DL3004",
+         "-t", "warning"
+       ]
