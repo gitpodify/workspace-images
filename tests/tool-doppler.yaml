@@ -1,0 +1,9 @@
+- desc: doppler should be installed
+  command: ["command", "-v", "doppler"]
+  assert:
+  - status == 0
+  - stdout.indexOf("/bin/tailscale") != -1
+- desc: it should find doppler-cli.list
+  command: [wc,/etc/apt/sources.list.d/doppler-cli.list]
+  assert:
+  - status == 0

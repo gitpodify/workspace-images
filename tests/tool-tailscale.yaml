@@ -1,0 +1,9 @@
+- desc: tailscale should be installed
+  command: ["command", "-v", "tailscale"]
+  assert:
+  - status == 0
+  - stdout.indexOf("/bin/tailscale") != -1
+- desc: it should find tailscale.list
+  command: [wc,/etc/apt/sources.list.d/tailscale.list]
+  assert:
+  - status == 0
