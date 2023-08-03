@@ -1,0 +1,13 @@
+trustedRegistries:
+- docker.io
+- ghcr.io
+- dock.mau.dev
+- quay.io
+failure-threshold: warning
+override:
+  warning:
+    - DL3004
+ignored:
+  - "DL3009" # Handled by install-packages script
+  - "DL3006"
+no-color: true

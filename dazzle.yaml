@@ -5,3 +5,4 @@ combiner:
         - dep-cacert-update
         - tool-docker
         - tool-tailscale
+        - tool-doppler
