@@ -11,7 +11,7 @@ jobs:
         steps:
         - uses: actions/checkout@v3
         - name: Install devbox
-          uses: jetpack-io/devbox-install-action@v0.2.0
+          uses: jetpack-io/devbox-install-action@v0.5.0
           with:
             devbox-version: "0.5.11"
         # DO NOT DO THIS ON CI - THINGS MAY GO WRONG, OR WORSE CAUSE SECURITY BACKPAIN
