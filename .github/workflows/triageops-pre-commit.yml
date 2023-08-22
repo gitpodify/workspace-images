@@ -10,10 +10,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - uses: actions/checkout@v3
-        - uses: actions/setup-python@v4
-          with:
-            python-version: 3.x
-        - run: brew install hadolint shellcheck
+        - name: Install devbox
+          uses: jetpack-io/devbox-install-action@v0.2.0
+        # DO NOT DO THIS ON CI - THINGS MAY GO WRONG, OR WORSE CAUSE SECURITY BACKPAIN
+        - run: devbox shell --print-env | tee --append $GITHUB_PATH >> /dev/null
         - uses: pre-commit/action@v3.0.0
         - uses: pre-commit-ci/lite-action@v1.0.1
           if: always()
