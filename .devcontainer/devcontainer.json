@@ -1,20 +1,22 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/dhoeric/features/hadolint:1": {},
-    "ghcr.io/lukewiwa/features/shellcheck:0": {}
+  "name": "Devbox Remote Container",
+  "build": {
+    "dockerfile": "./Dockerfile",
+    "context": ".."
   },
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"ms-azuretools.vscode-docker",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+                "ms-azuretools.vscode-docker",
 				"eamodio.gitlens",
 				"exiasr.hadolint",
 				"timonwong.shellcheck",
 				"jasonnutter.vscode-codeowners",
-				"chdsbd.github-code-owners"
-			]
-		}
-	}
+				"chdsbd.github-code-owners",
+        "jetpack-io.devbox"
+      ]
+    }
+  },
+  "remoteUser": "root"
 }

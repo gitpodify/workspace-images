@@ -6,3 +6,4 @@ combiner:
         - tool-docker
         - tool-tailscale
         - tool-doppler
+        - tool-nix

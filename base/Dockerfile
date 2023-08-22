@@ -1,5 +1,8 @@
 FROM buildpack-deps:jammy
 
+# Refer to DL4006 for details.
+SHELL [ "/bin/bash", "-o", "pipefail" ]
+
 ADD https://github.com/gitpod-io/workspace-images/raw/6e94c2184c21cd3aa1f1343d45253850eecaff32/base/install-packages /usr/bin/install-packages
 
 ### base ###
@@ -38,8 +41,8 @@ ENV LANG=en_US.UTF-8
 RUN upgrade-packages
 
 ### Git ###
-RUN add-apt-repository -y ppa:git-core/ppa
-RUN install-packages git git-lfs
+RUN add-apt-repository -y ppa:git-core/ppa \
+    && install-packages git git-lfs
 
 ### Gitpod user ###
 # '-l': see https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#user
@@ -63,6 +66,7 @@ RUN git lfs install --system --skip-repo
 ### Gitpod user (2) ###
 USER gitpod
 # use sudo so that user does not get sudo usage info on (the first) login
+# hadolint ignore=DL3004
 RUN sudo echo "Running 'sudo' for Gitpod: success" && \
     # create .bashrc.d folder and source it in the bashrc
     mkdir -p /home/gitpod/.bashrc.d && \

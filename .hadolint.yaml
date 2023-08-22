@@ -7,7 +7,10 @@ failure-threshold: warning
 override:
   warning:
     - DL3004
+  info:
+    - DL3015
 ignored:
   - "DL3009" # Handled by install-packages script
   - "DL3006"
+  - "SC2028"
 no-color: true

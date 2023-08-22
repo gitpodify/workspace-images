@@ -43,5 +43,6 @@ repos:
          "--ignore", "DL3009",
          "--ignore", "DL3006",
          "--warning", "DL3004",
+         "--info", "DL3015",
          "-t", "warning"
        ]
