@@ -1,6 +1,12 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "commitizen@4.2.4": {
+      "last_modified": "2022-01-01T22:37:24Z",
+      "resolved": "github:NixOS/nixpkgs/0fd74961da9fe2640ad2fbd960c3af08246e6749#commitizen",
+      "source": "devbox-search",
+      "version": "4.2.4"
+    },
     "github-cli@latest": {
       "last_modified": "2023-05-14T19:13:12Z",
       "resolved": "github:NixOS/nixpkgs/3007746b3f5bfcb49e102b517bca891822a41b31#github-cli",
@@ -12,6 +18,12 @@
       "resolved": "github:NixOS/nixpkgs/af8cd5ded7735ca1df1a1174864daab75feeb64a#hadolint",
       "source": "devbox-search",
       "version": "2.12.0"
+    },
+    "nodejs@18": {
+      "last_modified": "2023-06-30T04:44:22Z",
+      "resolved": "github:NixOS/nixpkgs/3c614fbc76fc152f3e1bc4b2263da6d90adf80fb#nodejs_18",
+      "source": "devbox-search",
+      "version": "18.16.1"
     },
     "pre-commit@latest": {
       "last_modified": "2023-06-30T04:44:22Z",

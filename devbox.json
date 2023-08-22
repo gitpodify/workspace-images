@@ -4,7 +4,9 @@
     "hadolint@latest",
     "pre-commit@latest",
     "github-cli@latest",
-    "shfmt@latest"
+    "shfmt@latest",
+    "commitizen@4.2.4",
+    "nodejs@18"
   ],
   "shell": {
     "init_hook": [

@@ -12,6 +12,8 @@ jobs:
         - uses: actions/checkout@v3
         - name: Install devbox
           uses: jetpack-io/devbox-install-action@v0.2.0
+          with:
+            devbox-version: "0.5.11"
         # DO NOT DO THIS ON CI - THINGS MAY GO WRONG, OR WORSE CAUSE SECURITY BACKPAIN
         - run: devbox shell --print-env | tee --append $GITHUB_PATH >> /dev/null
         - uses: pre-commit/action@v3.0.0
