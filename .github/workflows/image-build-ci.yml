@@ -1,0 +1,36 @@
+name: Image Buildkit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - chunks/**
+      - base/**
+      - dazzle.yaml
+      - .gitpod.yml
+      - .gitpod/**
+      - .github/**
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    environment: "canary/devel-builds"
+    steps:
+        # We're technically using the hosted runners until we did a workaround
+        # on disk space issues.
+        - name: Bulldoze disk space on hosted runners
+          uses: insightsengineering/disk-space-reclaimer@v1
+          with:
+            tools-cache: true
+            android: true
+            dotnet: true
+            haskell: true
+            large-packages: true
+            swap-storage: true
+            docker-images: true
+        - name: Checkout
+          uses: actions/checkout@v2
+        - name: Build
+          run: |
+            echo "Free space:"
+            df -h
