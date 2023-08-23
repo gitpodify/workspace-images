@@ -31,5 +31,23 @@
             "domain": "mau.dev",
             "type": "GitLab"
         }
-    ]
+    ],
+    "devbox.autoShellOnTerminal": true,
+    "gitlens.autolinks": [
+        {
+            "alphanumeric": false,
+            "prefix": "META-T-",
+            "title": "[INTERNAL] org-wide meta issue tracker #<num>",
+            "url": "https://recaptime.jetbrains.space/p/meta/issues/<num>"
+        },
+        {
+            "alphanumeric": false,
+            "title": "org-wide meta issue tracker #<num>",
+            "prefix": "META-",
+            "url": "https://mau.dev/recaptime-dev/squad/issue-tracker/issues/<num>"
+        }
+    ],
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/hadolint/hadolint/master/contrib/hadolint.json": "file:///home/ajhalili2006/projects/recaptime.dev/gp-ws-images/.hadolint.yaml"
+    }
 }

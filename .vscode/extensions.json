@@ -5,6 +5,7 @@
         "exiasr.hadolint",
         "timonwong.shellcheck",
         "jasonnutter.vscode-codeowners",
-        "chdsbd.github-code-owners"
+        "chdsbd.github-code-owners",
+        "jetpack-io.devbox"
     ]
 }
