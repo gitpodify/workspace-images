@@ -9,13 +9,24 @@ All images are available on [the project's RHQCR namespace](https://quay.io/gitp
 
 ## Available Images
 
+<!-- markdownlint-disable MD013 -->
+
+### By image combinations
+
 | Name | Description | CI Badges and Docs |
 | ---- | ---- | ---- |
 | Base Image (`base`) | The base image for all, based on latest Ubuntu LTS (currently `buildpack-deps:jammy`) | [![Link to docs badge](https://img.shields.io/badge/Read%20image%20docs-blue?logo=gitpod)](./base/README.md) |
+
+### By chunks
+
+TBD
 
 ## Contributing
 
 You can follow the detailed guide on how to contribute [here](CONTRIBUTING.md). Please be reminded that signing-off
 your commits is required per [the Linux DCO](https://policies.recaptime.eu.org/opensource/linux-dco).
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/workspace-images)
+| Development Environment | Deep link / Docs |
+| --- | --- |
+| Gitpod SaaS | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/workspace-images) |
+| GitHub Codespaces | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/gitpodify/workspace-images?quickstart=1) |
