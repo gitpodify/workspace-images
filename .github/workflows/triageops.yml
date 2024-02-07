@@ -16,7 +16,7 @@ jobs:
             devbox-version: "0.5.11"
         # DO NOT DO THIS ON CI - THINGS MAY GO WRONG, OR WORSE CAUSE SECURITY BACKPAIN
         - run: devbox shell --print-env | tee --append $GITHUB_PATH >> /dev/null
-        - uses: pre-commit/action@v3.0.0
+        - uses: pre-commit/action@v3.0.1
         - uses: pre-commit-ci/lite-action@v1.0.1
           if: always()
           with:
