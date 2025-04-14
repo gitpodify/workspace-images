@@ -6,7 +6,7 @@
     "github-cli@latest",
     "shfmt@latest",
     "commitizen@4.2.4",
-    "nodejs@18"
+    "nodejs@18.20.8"
   ],
   "shell": {
     "init_hook": [
