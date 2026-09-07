@@ -1,7 +1,7 @@
 {
   "packages": [
     "shellcheck@latest",
-    "hadolint@latest",
+    "hadolint@1.23.0",
     "pre-commit@latest",
     "github-cli@latest",
     "shfmt@latest",
