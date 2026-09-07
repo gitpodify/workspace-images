@@ -5,7 +5,7 @@
     "pre-commit@latest",
     "github-cli@latest",
     "shfmt@latest",
-    "commitizen@4.2.4",
+    "commitizen@4.16.5",
     "nodejs@18"
   ],
   "shell": {

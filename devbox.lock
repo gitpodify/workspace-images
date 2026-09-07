@@ -1,47 +1,163 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "commitizen@4.2.4": {
-      "last_modified": "2022-01-01T22:37:24Z",
-      "resolved": "github:NixOS/nixpkgs/0fd74961da9fe2640ad2fbd960c3af08246e6749#commitizen",
+    "commitizen@4.16.5": {
+      "last_modified": "2026-08-27T07:16:00Z",
+      "resolved": "github:NixOS/nixpkgs/c27cdad491a991b11ed731760aa2ef8db0cb0410#commitizen",
       "source": "devbox-search",
-      "version": "4.2.4"
+      "version": "4.16.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/l3dvf0mspyvknv3a9hn6799ss01qxdnd-python3.14-commitizen-4.16.5",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/70snvyg2n7b4yy6mpzh9xj4ip9yldzlh-python3.14-commitizen-4.16.5-dist"
+            }
+          ],
+          "store_path": "/nix/store/l3dvf0mspyvknv3a9hn6799ss01qxdnd-python3.14-commitizen-4.16.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4r2ibr6g1z87y4dcbffvfxr4d04dbhkg-python3.14-commitizen-4.16.5",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/k9valwi31x9yvyjm273acaqdgll0v7g4-python3.14-commitizen-4.16.5-dist"
+            }
+          ],
+          "store_path": "/nix/store/4r2ibr6g1z87y4dcbffvfxr4d04dbhkg-python3.14-commitizen-4.16.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/i8s5a3af85dxhvmghfm8l5aixs6pr5l7-python3.14-commitizen-4.16.5",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/zznv3ci9ldn5b70y15fnp83dqlbza4mk-python3.14-commitizen-4.16.5-dist"
+            }
+          ],
+          "store_path": "/nix/store/i8s5a3af85dxhvmghfm8l5aixs6pr5l7-python3.14-commitizen-4.16.5"
+        }
+      }
     },
     "github-cli@latest": {
       "last_modified": "2023-05-14T19:13:12Z",
       "resolved": "github:NixOS/nixpkgs/3007746b3f5bfcb49e102b517bca891822a41b31#github-cli",
       "source": "devbox-search",
-      "version": "2.29.0"
+      "version": "2.29.0",
+      "systems": {
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "path": "/tmp/containerbase/cache/nix/store/wi95f8g8fkj9p2ackwksknyd936kmrv2-gh-2.29.0",
+              "default": true
+            }
+          ]
+        }
+      }
     },
     "hadolint@latest": {
       "last_modified": "2023-07-23T03:35:12Z",
       "resolved": "github:NixOS/nixpkgs/af8cd5ded7735ca1df1a1174864daab75feeb64a#hadolint",
       "source": "devbox-search",
-      "version": "2.12.0"
+      "version": "2.12.0",
+      "systems": {
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "path": "/tmp/containerbase/cache/nix/store/wcha4kghplygi9nbfldy7kh5kcarl8pn-hadolint-2.12.0",
+              "default": true
+            }
+          ]
+        }
+      }
     },
     "nodejs@18": {
       "last_modified": "2023-06-30T04:44:22Z",
+      "plugin_version": "0.0.4",
       "resolved": "github:NixOS/nixpkgs/3c614fbc76fc152f3e1bc4b2263da6d90adf80fb#nodejs_18",
       "source": "devbox-search",
-      "version": "18.16.1"
+      "version": "18.16.1",
+      "systems": {
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "path": "/tmp/containerbase/cache/nix/store/g7wdwwjmgx1r5cnjq111jwv8j48n2nkd-nodejs-18.16.1",
+              "default": true
+            }
+          ]
+        }
+      }
     },
     "pre-commit@latest": {
       "last_modified": "2023-06-30T04:44:22Z",
       "resolved": "github:NixOS/nixpkgs/3c614fbc76fc152f3e1bc4b2263da6d90adf80fb#pre-commit",
       "source": "devbox-search",
-      "version": "3.3.3"
+      "version": "3.3.3",
+      "systems": {
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "path": "/tmp/containerbase/cache/nix/store/pd3syaq0j9vnazchvpx6m3zj830hbmmv-pre-commit-3.3.3",
+              "default": true
+            }
+          ]
+        }
+      }
     },
     "shellcheck@latest": {
       "last_modified": "2023-07-23T03:35:12Z",
       "resolved": "github:NixOS/nixpkgs/af8cd5ded7735ca1df1a1174864daab75feeb64a#shellcheck",
       "source": "devbox-search",
-      "version": "0.9.0"
+      "version": "0.9.0",
+      "systems": {
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "bin",
+              "path": "/tmp/containerbase/cache/nix/store/1qp6p1imfmb0lf8q0gj1yjc0iaaanki3-shellcheck-0.9.0-bin",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/tmp/containerbase/cache/nix/store/4zgq5zvm2dv21pj563z9h9q03y6xhvmi-shellcheck-0.9.0-doc",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/tmp/containerbase/cache/nix/store/k9i7sd5qcxllcf45szx3par8c7jmmdr3-shellcheck-0.9.0-man",
+              "default": true
+            }
+          ]
+        }
+      }
     },
     "shfmt@latest": {
       "last_modified": "2023-08-08T03:07:33Z",
       "resolved": "github:NixOS/nixpkgs/844ffa82bbe2a2779c86ab3a72ff1b4176cec467#shfmt",
       "source": "devbox-search",
-      "version": "3.7.0"
+      "version": "3.7.0",
+      "systems": {
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "path": "/tmp/containerbase/cache/nix/store/a6p8i7rlxzck4fp5vqh6mr0bwrb45g5s-shfmt-3.7.0",
+              "default": true
+            }
+          ]
+        }
+      }
     }
   }
 }
