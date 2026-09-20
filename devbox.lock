@@ -13,14 +13,15 @@
       "source": "devbox-search",
       "version": "2.29.0"
     },
-    "hadolint@latest": {
-      "last_modified": "2023-07-23T03:35:12Z",
-      "resolved": "github:NixOS/nixpkgs/af8cd5ded7735ca1df1a1174864daab75feeb64a#hadolint",
+    "hadolint@1.23.0": {
+      "last_modified": "2021-04-02T00:58:33Z",
+      "resolved": "github:NixOS/nixpkgs/54c1e44240d8a527a8f4892608c4bce5440c3ecb#hadolint",
       "source": "devbox-search",
-      "version": "2.12.0"
+      "version": "1.23.0"
     },
     "nodejs@18": {
       "last_modified": "2023-06-30T04:44:22Z",
+      "plugin_version": "0.0.5",
       "resolved": "github:NixOS/nixpkgs/3c614fbc76fc152f3e1bc4b2263da6d90adf80fb#nodejs_18",
       "source": "devbox-search",
       "version": "18.16.1"
