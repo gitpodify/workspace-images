@@ -3,7 +3,7 @@
     "shellcheck@latest",
     "hadolint@latest",
     "pre-commit@latest",
-    "github-cli@latest",
+    "github-cli@0.12.0",
     "shfmt@latest",
     "commitizen@4.2.4",
     "nodejs@18"
