@@ -2,7 +2,7 @@
   "packages": [
     "shellcheck@latest",
     "hadolint@latest",
-    "pre-commit@latest",
+    "pre-commit@2.20.0",
     "github-cli@latest",
     "shfmt@latest",
     "commitizen@4.2.4",
