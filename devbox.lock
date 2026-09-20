@@ -21,6 +21,7 @@
     },
     "nodejs@18": {
       "last_modified": "2023-06-30T04:44:22Z",
+      "plugin_version": "0.0.5",
       "resolved": "github:NixOS/nixpkgs/3c614fbc76fc152f3e1bc4b2263da6d90adf80fb#nodejs_18",
       "source": "devbox-search",
       "version": "18.16.1"
@@ -37,11 +38,43 @@
       "source": "devbox-search",
       "version": "0.9.0"
     },
-    "shfmt@latest": {
-      "last_modified": "2023-08-08T03:07:33Z",
-      "resolved": "github:NixOS/nixpkgs/844ffa82bbe2a2779c86ab3a72ff1b4176cec467#shfmt",
+    "shfmt@3.14.0": {
+      "last_modified": "2026-08-29T00:50:12Z",
+      "resolved": "github:NixOS/nixpkgs/e8be7818e19ada32105a8af937a6a473b38167ca#shfmt",
       "source": "devbox-search",
-      "version": "3.7.0"
+      "version": "3.14.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/chxz0ldsm6xv60ywapbyky0fh4f5zfyq-shfmt-3.14.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/chxz0ldsm6xv60ywapbyky0fh4f5zfyq-shfmt-3.14.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ifppybbzrabjvs5sb7dssd0i0vhs6676-shfmt-3.14.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ifppybbzrabjvs5sb7dssd0i0vhs6676-shfmt-3.14.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jwh3kngy76myw6k43xlvv99dg7mrkk0a-shfmt-3.14.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/jwh3kngy76myw6k43xlvv99dg7mrkk0a-shfmt-3.14.0"
+        }
+      }
     }
   }
 }
